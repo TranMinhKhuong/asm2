@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:src="@mipmap/vietnam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="Việt Nam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/imgViewHotel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:src="@drawable/hotel" />
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="Khách Sạn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <ImageButton
+                android:id="@+id/imgViewHospital"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:src="@drawable/hospital" />
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="Bệnh viện"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/imgViewATM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/atm_machine" />
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="ATM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <ImageButton
+                android:id="@+id/imgViewBus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:src="@drawable/metro" />
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="Xe bus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
